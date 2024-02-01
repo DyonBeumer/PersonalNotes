@@ -1,0 +1,15 @@
+Dyon_Windows_Journey
+
+Testing on Windows 11 Home 64bit (10.0, build 22631)
+
+WinP(reInstallation)E(nvironment) -> For installing/maintaining OS images
+
+Powercfg -> Power settings
+	/L(ist)
+	/Q(uery)
+	/S(et)
+	
+DISM (Deployment Image Servicing and Management)
+-> Disable non-uninstallable components. I.E. Xbox Game Bar
+-> List installed:
+	dism /Online /Get-ProvisionedAppxPackages | Select-String PackageName
